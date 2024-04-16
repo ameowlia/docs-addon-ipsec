@@ -1,5 +1,5 @@
 ---
-title: Release notes for IPsec for VMware Tanzu
+title: Release Notes for IPsec for VMware Tanzu
 owner: Security Engineering
 ---
 
@@ -10,6 +10,7 @@ This topic describes the changes in this minor release of <%= vars.product_full 
 <%= partial vars.path_to_partials + "/upgrade-planner" %>
 
 ## Releases
+
 ### <a id='1-9-58'></a> v1.9.58
 
 **Release Date**: April 16, 2024
@@ -21,35 +22,35 @@ This topic describes the changes in this minor release of <%= vars.product_full 
 
 ### <a id='1-9-56'></a> v1.9.56
 
-**Release date**: February 23, 2024
+**Release Date**: February 23, 2024
 
-#### Maintenance changes
+#### Maintenance Changes
 
 * **OpenSSL:** Upgraded to v3.2.1
 
 ### <a id='1-9-54'></a> v1.9.54
 
-**Release date**: January 10, 2024
+**Release Date**: January 10, 2024
 
-#### Maintenance changes
+#### Maintenance Changes
 
 * **Strongswan:** Upgraded to v5.9.12 to address:
   * [CVE-2023-41913](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-41913)
 
 ### <a id='1-9-52'></a> v1.9.52
 
-**Release date**: November 2, 2023
+**Release Date**: November 2, 2023
 
-#### Maintenance changes
+#### Maintenance Changes
 
 * **OpenSSL:** Upgraded to v3.0.8
   * See [FIPS validation certificate](https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4282)
 
 ### <a id='1-9-50'></a> v1.9.50
 
-**Release date**: September 7, 2023
+**Release Date**: September 7, 2023
 
-#### Maintenance changes
+#### Maintenance Changes
 
 * **OpenSSL:** Upgraded to v1.0.2zi to address:
   * [CVE-2023-3817](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3817)
@@ -57,17 +58,17 @@ This topic describes the changes in this minor release of <%= vars.product_full 
 
 ### <a id='1-9-47'></a> v1.9.47
 
-**Release date**: July 3, 2023
+**Release Date**: July 3, 2023
 
-#### Maintenance changes
+#### Maintenance Changes
 
 * **Strongswan:** Upgraded to v5.9.11
 
 ### <a id='1-9-46'></a> v1.9.46
 
-**Release date**: June 2, 2023
+**Release Date**: June 2, 2023
 
-#### Maintenance changes
+#### Maintenance Changes
 
 * **OpenSSL:** Upgraded to v1.0.2zh to address:
   * [CVE-2023-2650](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-2650)
@@ -78,9 +79,9 @@ This topic describes the changes in this minor release of <%= vars.product_full 
 
 ### <a id='1-9-43'></a> v1.9.43
 
-**Release date**: April 12, 2023
+**Release Date**: April 12, 2023
 
-#### Maintenance changes
+#### Maintenance Changes
 
 * **Strongswan:** Upgraded to v5.9.10
 * **OpenSSL:** Upgraded to v1.0.2zg to address:
@@ -88,7 +89,7 @@ This topic describes the changes in this minor release of <%= vars.product_full 
   * [CVE-2023-0215](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0215)
   * [CVE-2022-4304](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4304)
 
-#### Known issues
+#### Known Issues
 
 * In some deployments, IPsec has undesired behavior when used with Jammy stemcells v1.18 to v1.83 (inclusive).
 NATS communication failure causes BOSH jobs such as `route_registrar`, `nats-tls-healthcheck`,
@@ -98,23 +99,23 @@ For more information, see the [VMware Tanzu Support documentation](https://commu
 
 ### <a id='1-9-40'></a> v1.9.40
 
-**Release date**: January 11, 2023
+**Release Date**: January 11, 2023
 
-#### Maintenance changes
+#### Maintenance Changes
 
 * `swanctl.conf` replaces the legacy `ipsec.conf`
 * **Strongswan:** Upgraded to v5.9.5
 * **OpenSSL FIPS:** Upgraded to v2.0.20-vmw
 
-#### Known issues
+#### Known Issues
 
 There are no known issues in this release.
 
 ### <a id='1-9-39'></a> v1.9.39
 
-**Release date**: November 11, 2022
+**Release Date**: November 11, 2022
 
-#### Maintenance changes
+#### Maintenance Changes
 
 * **OpenSSL:** Upgraded to v1.0.2zf to address
   [CVE-2022-1292](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1292) and
@@ -126,28 +127,28 @@ There are no known issues in this release.
 * <%= vars.product_full %> now uses the FIPS-certified version of OpenSSL instead of the OpenSSL
   version supplied in Stemcell
 
-#### Known issues
+#### Known Issues
 
 There are no known issues in this release.
 
 ### <a id='1-9-38'></a> v1.9.38
 
-**Release date**: April 13, 2022
+**Release Date**: April 13, 2022
 
-#### Maintenance changes
+#### Maintenance Changes
 
 * **OpenSSL:** Upgraded to v1.0.2zd to address [CVE-2022-0778](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0778).
 * **Strongswan:** Upgraded to v5.9.5.
 
-#### Known issues
+#### Known Issues
 
 There are no known issues for this release.
 
 ### <a id="1-9-37"></a>  v1.9.37
 
-**Release date:** November 1, 2021
+**Release Date:** November 1, 2021
 
-#### Maintenance changes
+#### Maintenance Changes
 
 Maintenance changes in this release:
 
@@ -157,15 +158,15 @@ Maintenance changes in this release:
 * **Strongswan:** Upgraded to v5.9.3.
 * **GMP:** Upgraded to v6.2.1
 
-#### Known issues
+#### Known Issues
 
 There are no known issues for this release.
 
 ### <a id="1-9-35"></a>  v1.9.35
 
-**Release date:** April 9, 2021
+**Release Date:** April 9, 2021
 
-#### Maintenance changes
+#### Maintenance Changes
 
 Maintenance changes in this release:
 
@@ -174,13 +175,13 @@ Maintenance changes in this release:
  * High [CVE-2021-23840](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-23840)
  * Medium [CVE-2021-23841](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-23841)
 
-#### Known issues
+#### Known Issues
 
 There are no known issues for this release.
 
 ### <a id="1-9-32"></a>  v1.9.32
 
-**Release date:** February 24, 2021
+**Release Date:** February 24, 2021
 
 #### Fixed Issues
 
@@ -188,14 +189,14 @@ This release fixes the following issue:
 
 * **NATS clients connection:** NATS clients failed to connect to NATS VM when rotating certificates
 
-#### Known issues
+#### Known Issues
 
 There are no known issues for this release.
 
 
 ### <a id="1-9-31"></a>  v1.9.31
 
-**Release date:** December 4, 2020
+**Release Date:** December 4, 2020
 
 #### Features
 
@@ -216,7 +217,7 @@ Handles duplicate certificate subjects and serial numbers against the subjects
 and serial numbers of all the
   certificate authorities.
 
-#### Known issues
+#### Known Issues
 
 This release has the following issue:
 
@@ -225,7 +226,7 @@ This release has the following issue:
 
 ###<a id="1-9-25"></a>  v1.9.25
 
-**Release date:** June 2, 2020
+**Release Date:** June 2, 2020
 
 #### Features
 
@@ -233,14 +234,14 @@ New features and changes in this release:
 
 * **Updates strongSwan to v5.8.4**. For more information, see [strongSwan 5.8.4 Released](https://www.strongswan.org/blog/2020/03/30/strongswan-5.8.4-released.html) in the strongSwan documentation.
 
-#### Known issues
+#### Known Issues
 
 There are no known issues for this release.
 
 
 ###<a id="1-9-21"></a>  v1.9.21
 
-**Release date:** October 17, 2019
+**Release Date:** October 17, 2019
 
 #### Features
 
@@ -252,7 +253,7 @@ This now works for all IaaSes, including vSphere.
 
 ###<a id="1-9-19"></a>  v1.9.19
 
-**Release date:** August 14, 2019
+**Release Date:** August 14, 2019
 
 #### Features
 
@@ -260,14 +261,14 @@ New features and changes in this release:
 
 * **Updates strongSwan to v5.8.0:** For more information, see [strongSwan 5.8.0 Released](https://www.strongswan.org/blog/2019/05/20/strongswan-5.8.0-released.html) in the strongSwan documentation.
 
-#### Known issues
+#### Known Issues
 
 There are no known issues for this release.
 
 
 ###<a id="1-9-13"></a>  v1.9.13
 
-**Release date:** November 19, 2018
+**Release Date:** November 19, 2018
 
 #### Features
 
@@ -286,13 +287,13 @@ Now, <%= vars.product_short %> does not deploy if there are duplicate common nam
 numbers in the certificate chain.
 For more information, see this troubleshooting [symptom](./troubleshooting.html#duplicate).
 
-#### Known issues
+#### Known Issues
 
 There are no known issues for this release.
 
 ###<a id="1-9-9"></a>  v1.9.9
 
-**Release date:** August 23, 2018
+**Release Date:** August 23, 2018
 
 #### Features
 
@@ -312,7 +313,7 @@ created for the enablement of the following alerts: certificate expiration and o
 
 ### <a id="1-9-4"></a>  v1.9.4
 
-**Release date:** June 28, 2018
+**Release Date:** June 28, 2018
 
 #### Features
 
@@ -332,7 +333,7 @@ rather than issuing an ICMP ping request to the remote host.
 * Updates smoke tests to skip the connectivity check on localhost, because strongSwan
 does not create a transform when the source and destination addresses are equal.
 
-### <a id="view"></a> View Release Notes for Another Version
+### <a id="view"></a> View Release Notes for another Version
 
 To view the release notes for another product version, select the version from
 the drop-down menu at the top of this page.
